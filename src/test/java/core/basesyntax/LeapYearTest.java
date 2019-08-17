@@ -10,7 +10,9 @@ public class LeapYearTest {
         for (int i = 1; i <= 2000; i++) {
             int actualResult = leapYear.leapYearCount(i);
             int expectedResult = leapYearCountResult(i);
-            Assert.assertEquals("With year: " + i, expectedResult, actualResult);
+            Assert.assertEquals("Test failed with year: " + i,
+                    expectedResult,
+                    actualResult);
         }
     }
 
