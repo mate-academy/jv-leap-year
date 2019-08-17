@@ -9,12 +9,12 @@ public class LeapYearTest {
         LeapYear leapYear = new LeapYear();
         for (int i = 1; i <= 2000; i++) {
             int actualResult = leapYear.leapYearCount(i);
-            int expectedResult = getLeapYearCount(i);
+            int expectedResult = leapYearCountResult(i);
             Assert.assertEquals("With year: " + i, expectedResult, actualResult);
         }
     }
 
-    private int getLeapYearCount(int year) {
+    private int leapYearCountResult(int year) {
         int result = 0;
         for (int i = 1; i <= year; i++) {
             if (i % 4 == 0) {
