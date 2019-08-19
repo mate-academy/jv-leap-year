@@ -11,7 +11,7 @@ package core.basesyntax;
  * использующую только арифметические операторы.
  */
 public class LeapYear {
-    public int leapYearCount(int year) {
+    public int countLeapYears(int year) {
         return 0;
     }
 }
