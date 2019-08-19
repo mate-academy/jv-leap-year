@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class LeapYearTest {
     @Test
-    public void leapYearCount() {
+    public void countLeapYears() {
         LeapYear leapYear = new LeapYear();
         for (int i = 1; i <= 2000; i++) {
             int actualResult = leapYear.leapYearCount(i);
@@ -16,7 +16,7 @@ public class LeapYearTest {
         }
     }
 
-    private int leapYearCountResult(int year) {
+    private int countLeapYearsResult(int year) {
         int result = 0;
         for (int i = 1; i <= year; i++) {
             if (i % 4 == 0) {
