@@ -8,8 +8,8 @@ public class LeapYearTest {
     public void countLeapYears() {
         LeapYear leapYear = new LeapYear();
         for (int i = 1; i <= 2000; i++) {
-            int actualResult = leapYear.leapYearCount(i);
-            int expectedResult = leapYearCountResult(i);
+            int actualResult = leapYear.countLeapYears(i);
+            int expectedResult = countLeapYearsResult(i);
             Assert.assertEquals("Test failed with year: " + i,
                     expectedResult,
                     actualResult);
